@@ -1,0 +1,58 @@
+{
+  "configLinks": {
+    "profilePic": "https://drive.google.com/uc?export=view&id=1-gsU9b24wSInFSQZeKESC4Rm2WP8JAQ1",
+    "headerPic": "https://drive.google.com/uc?export=view&id=1WE-MFpyhLwP_4yekwia0S_NdEb4Nltkc",
+    "linkdin": "https://www.linkedin.com/in/apurva-shekhar1",
+    "github": "https://github.com/apurvashekhar96",
+    "fullName": "Apurva Shekhar",
+    "sections": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "About",
+        "link": "/about",
+        "header": "About Me",
+        "content": "I am a full stack developer. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "label": "Skills",
+        "link": "/skills",
+        "content": "HTML5,CSS3,JavaScript,ReactJS,MongoDB,Mongoose,ExpressJS,NodeJS,MySQL,Swquelize,Git,GitHub,PowerBI,Basics of C++ and Python"
+      },
+      {
+        "label": "Contact",
+        "link": "/contact",
+        "content": {
+          "email": "apurvashekharofficial@gmail.com",
+          "mobile": 7991194719
+        }
+      },
+      {
+        "label": "Projects",
+        "link": "/projects",
+        "content": [
+          {
+            "label": "E-Commerce Web App",
+            "repoLink": "https://github.com/apurvashekhar96/eCommerceProjectWebApp",
+            "desc": "sdfjshdfjkasdfhaksdjfasdjkfhasdjd",
+            "skills": "ExpressJs,NodeJs,Mongoose"
+          },
+          {
+            "label": "Cab Aggregator",
+            "repoLink": "https://github.com/apurvashekhar96/eCommerceProjectWebApp",
+            "desc": "sdfjshdfjkasdfhaksdjfasdjkfhasdjd",
+            "skills": "ExpressJs,NodeJs,Mongoose"
+          }
+        ]
+      }
+    ]
+  },
+  "formData": {
+    "name": "",
+    "emailAdd": "",
+    "mobile": "2332",
+    "desc": ""
+  }
+}
