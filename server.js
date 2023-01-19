@@ -59,3 +59,5 @@ mongoose
 
 // "start": "react-scripts start",
 // "start:server": "json-server --watch db.json --port 3001",
+
+module.exports = app;
