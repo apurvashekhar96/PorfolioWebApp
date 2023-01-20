@@ -30,7 +30,7 @@ app.use(configRoutes);
 
 app.use(formDataRoutes);
 
-app.use("/", (req, res, next) => {
+app.use("*", (req, res, next) => {
   res.sendFile(path.join(__dirname, "portfolioappclient/build", "index.html"));
   next();
 });
