@@ -5,7 +5,6 @@ import { store } from "./store";
 import "./index.css";
 import { NavigationProvider } from "./contexts/Navigation";
 import { ScreenSizeContextProvider } from "./contexts/ScreenSize";
-import { ModalWindowProvider } from "./contexts/ModalWindow";
 
 import App from "./App";
 
@@ -14,11 +13,9 @@ root.render(
   <Provider store={store}>
     <ScreenSizeContextProvider>
       <NavigationProvider>
-        <ModalWindowProvider>
-          <React.StrictMode>
-            <App />
-          </React.StrictMode>
-        </ModalWindowProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
       </NavigationProvider>
     </ScreenSizeContextProvider>
   </Provider>

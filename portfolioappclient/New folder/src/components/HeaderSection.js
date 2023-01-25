@@ -3,12 +3,8 @@ import useNavigationContext from "../hooks/useNavigation";
 import classNames from "classnames";
 import DisplayImage from "./DisplayImage";
 import useScreenSizeContext from "../hooks/useScreenSizeDetector";
-import Button from "../components/Button";
-import useModalWindowContext from "../hooks/useModalWindowContext";
 
 function HeaderSection() {
-  const { handleModalOpen, jwToken, setjwToken } = useModalWindowContext();
-
   const screenSize = useScreenSizeContext();
   const { data, isFetching } = useFetchLinksQuery();
   const { currentPage } = useNavigationContext();
@@ -58,35 +54,6 @@ function HeaderSection() {
         </div>
       </div>
     );
-  }
-
-  //creating login button on the home page
-  const handleLoginClick = () => {
-    handleModalOpen();
-  };
-
-  const handleLogoutClick = () => {
-    setjwToken(null);
-  };
-
-  if (!isFetching && currentPage === "/") {
-    if (!jwToken) {
-      element = (
-        <div className="absolute bottom-3 right-7">
-          <Button onClick={handleLoginClick} primary rounded>
-            Login
-          </Button>
-        </div>
-      );
-    } else if (jwToken) {
-      element = (
-        <div className="absolute bottom-3 right-7">
-          <Button onClick={handleLogoutClick} primary rounded>
-            Logout
-          </Button>
-        </div>
-      );
-    }
   }
 
   return (

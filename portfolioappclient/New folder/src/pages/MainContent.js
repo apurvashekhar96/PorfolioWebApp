@@ -9,7 +9,6 @@ function MainContent() {
   return (
     <div className="bg-secondary-container min-h-100">
       <Route path="/">
-        {" "}
         <HomePage />
       </Route>
       <Route path="/about">
