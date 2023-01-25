@@ -25,7 +25,7 @@ function ModalPage() {
     );
   }
   const modalEl = (
-    <Modal actionBar={actionBar} onClick={handleModalClose}>
+    <Modal actionBar={actionBar} onClick={handleModalCloseResetError}>
       <LoginForm />
     </Modal>
   );
